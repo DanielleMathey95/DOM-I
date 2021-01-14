@@ -50,3 +50,16 @@ navItems[2].textContent = siteContent['nav']['nav-item-3'];
 navItems[3].textContent = siteContent['nav']['nav-item-4'];
 navItems[4].textContent = siteContent['nav']['nav-item-5'];
 navItems[5].textContent = siteContent['nav']['nav-item-6'];
+
+//CTA h1
+let header1 = document.getElementsByTagName('h1');
+header1[0].textContent = siteContent["cta"]["h1"]
+
+//CTA Button
+let button1 = document.getElementsByTagName("button");
+button1.textContent = siteContent["cta"]["button"]
+
+//CTA Image
+let headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"])
+
