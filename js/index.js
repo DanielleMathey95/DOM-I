@@ -63,3 +63,19 @@ button1.textContent = siteContent["cta"]["button"]
 let headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src', siteContent["cta"]["img-src"])
 
+//TOP CONTENT
+let topContentParent = document.querySelector(".top-content");
+let topContentChildren = Array.from(topContentParent.children);
+
+let featuresSection = topContentChildren[0].children;
+featuresSection[0].textContent = siteContent["main-content"]["features-h4"]
+featuresSection[1].textContent = siteContent ["main-content"]["features-content"]
+
+let aboutSection = topContentChildren[1].children;
+aboutSection[0].textContent = siteContent["main-content"]["about-h4"]
+aboutSection[1].textContent = siteContent["main-content"]["about-content"]
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//BOTTOM CONTENT
