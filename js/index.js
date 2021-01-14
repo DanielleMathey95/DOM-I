@@ -116,3 +116,32 @@ let copyrightChildren = Array.from(copyrightParent);
 
 let footerCopyright = copyrightChildren[0];
 copyrightChildren[0].textContent = siteContent["footer"]["copyright"]
+
+//NAV STYLES
+let navBarColor = document.getElementsByTagName('a')
+navBarColor[0].style.color = 'green';
+navBarColor[1].style.color = 'green';
+navBarColor[2].style.color = 'green';
+navBarColor[3].style.color = 'green';
+navBarColor[4].style.color = 'green';
+navBarColor[5].style.color = 'green';
+
+//NAV ADD 
+
+//PREPEND
+let navBarHello = document.querySelector('nav')
+navBarChild = document.createElement('a');
+navBarChild.textContent = "Hello"
+
+navBarHello.prepend(navBarChild);
+
+navBarChild.style.color = "green";
+
+//APPEND
+navBarChild2 = document.createElement('a');
+navBarChild2.textContent = "Goodbye"
+
+navBarHello.prepend(navBarChild);
+navBarHello.appendChild(navBarChild2);
+
+navBarChild2.style.color = "green";
